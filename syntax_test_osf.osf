@@ -1,0 +1,53 @@
+// SYNTAX TEST "Packages/User/osf.sublime-syntax"
+
+[header]
+// <- comment
+
+[/header]
+// <- comment
+
+    Test chapter 1 #c
+//  ^^^^^^^^^^^^^^^ storage.type 
+//                 ^^ constant.language
+
+01:23:45.678 Test chapter 2 #c
+// <- keyword
+//       ^^^ keyword  
+//           ^^^^^^^^^^^^^^^ storage.type
+//                          ^^ constant.language
+
+98:76:54 Test chapter 3 #chapter
+// <- keyword
+//    ^^ keyword 
+//       ^^^^^^^^^^^^^^^ storage.type - Dot and last 3 digits are optional.
+//                      ^^^^^^^ constant.language
+
+13423533 Test chapter 3 #chapter
+// <- keyword
+//    ^^ keyword 
+//       ^^^^^^^^^^^^^^^ storage.type - Dot and last 3 digits are optional.
+//                      ^^^^^^^ constant.language
+
+
+- Text with indent.
+// <- entity.name.class 
+
+-- Text with indent.
+// <- entity.name.class
+ // <- entity.name.class
+
+--- Text with indent.
+// <- entity.name.class
+ // <- entity.name.class
+  // <- entity.name.class
+
+Text #tag
+//   ^^^^ string
+
+Text #tag1 #tag2
+//   ^^^^^^^^^^^ string
+
+Text <http://url>
+//   ^ entity.name.class
+//    ^^^^^^^^^^ variable.parameter
+//              ^ entity.name.class

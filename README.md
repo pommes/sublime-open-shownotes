@@ -11,12 +11,12 @@ This files does not specify any colors. It uses keywords for colors defined in S
 
 ## Install
 1. In the Sublime menu go to *Sublime Text* -> *Preferences* -> *Browse Packages...* and select the *User* Package/Folder.
-2. Download the file [Open Shownotes (osf).sublime-syntax](Open%20Shownotes%20(osf).sublime-syntax) into the *User* Folder. 
+2. Download the file [Open Shownotes (osf).sublime-syntax](https://raw.githubusercontent.com/pommes/sublime-open-shownotes/master/Open%20Shownotes%20(osf).sublime-syntax) into the *User* Folder. 
 
 ## Use
 Sublime will automatically use the syntax for files ending with *osf* or you manually can select syntax highlighting for files with other extensions via the menu *View* -> *Syntax* -> *Open Shownotes (osf)*.
 
 ## Develop & Test
-You can change and run tests of the syntax file right from within *Sublime Text*. For that purpose you can use the test file [Open Shownotes (osf).sublime-syntax-test.osf](Open%20Shownotes%20(osf).sublime-syntax-test.osf).
+You can change and run tests of the syntax file right from within *Sublime Text*. For that purpose you can use the test file [Open Shownotes (osf).sublime-syntax-test.osf](https://raw.githubusercontent.com/pommes/sublime-open-shownotes/master/Open%20Shownotes%20(osf).sublime-syntax-test.osf).
 For more information about building Sublime Text Syntax files and Test files see [Sublime Text Syntax Format Reference](http://www.sublimetext.com/docs/3/syntax.html).
 As example about Sublime Themes, see [Monokai.tmTheme](https://github.com/cj/sublime/blob/master/Color%20Scheme%20-%20Default/Monokai.tmTheme).

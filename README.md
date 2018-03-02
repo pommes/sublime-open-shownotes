@@ -10,7 +10,7 @@ This files does not specify any colors. It uses keywords for colors defined in S
 ![Example Open Shownotes File showing syntax highlighting.](images/sublime-osf-syntax-example.png)
 
 ## Install
-1. In *Sublime Text* go to *Preferences* -> *Browse Packages...* and select the *User* Package/Folder.
+1. In the Sublime menu go to *Sublime Text* -> *Preferences* -> *Browse Packages...* and select the *User* Package/Folder.
 2. Download the file [Open Shownotes (osf).sublime-syntax](Open%20Shownotes%20(osf).sublime-syntax) into the *User* Folder. 
 
 ## Use

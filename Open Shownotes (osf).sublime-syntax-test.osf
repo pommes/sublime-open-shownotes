@@ -44,6 +44,10 @@
 Text #tag
 //   ^^^^ string
 
+Text #???
+//  ^^^^^ invalid
+
+
 Text #tag1 #tag2
 //   ^^^^^^^^^^^ string
 
@@ -51,3 +55,9 @@ Text <http://url>
 //   ^ entity.name.class
 //    ^^^^^^^^^^ variable.parameter
 //              ^ entity.name.class
+
+Text <???>
+//   ^ entity.name.class
+//    ^^^ invalid
+//       ^ entity.name.class
+

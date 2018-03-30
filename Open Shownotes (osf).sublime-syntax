@@ -20,6 +20,7 @@ variables:
   chaptername: '(.*) (?=\#c(hapter)?)'
   chaptertag: '(\#c(hapter)?)($|\b)'
   url: '[[:word:]]+:\/\/\S+(?=>)'
+  placeholder_url: '.*(?=>)'
 contexts:
   main:
     # Header
@@ -39,11 +40,14 @@ contexts:
     # Other tags #other Tags
     - match: '( \#[[:word:]]+)+'
       scope: string
+    # Other tags #other Tags
+    - match: '( \#.*+)+'
+      scope: invalid
     # First indention -
     - match: '^(-)+ '
       scope: entity.name.class
     # Begin of Link
-    - match: '\<(?=[[:word:]])'
+    - match: '\<(?=.*?\>)'
       scope: entity.name.class
       push: link
 
@@ -57,10 +61,13 @@ contexts:
       pop: true
 
   link:
+    # Valid URL
     - match: '{{url}}'
       scope: variable.parameter
+    # Invalid URL (placeholder)
+    - match: '{{placeholder_url}}'
+      scope: invalid
     - match: '\>'
       scope: entity.name.class
       pop: true
 
-        

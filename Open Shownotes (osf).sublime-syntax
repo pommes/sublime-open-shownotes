@@ -26,7 +26,7 @@ contexts:
     # Header
     - match: '\[(/)?header\]'
       scope: comment
-    # Timecode
+    # Timecode at Chapters
     - match: '\b({{timecode}}|{{ux_timestamp}})\b(?=.*\#c)'
       scope: keyword
       push: chapter
@@ -37,6 +37,9 @@ contexts:
     - match: '{{chaptertag}}'
       scope: constant.language
       pop: true
+    # Timecode at other entries
+    - match: '\b({{timecode}}|{{ux_timestamp}})\b(?=.*\#)'
+      scope: entity.name.class
     # Other tags #other Tags
     - match: '( \#[[:word:]]+)+'
       scope: string
